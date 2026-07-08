@@ -1,0 +1,23 @@
+// Fortune Cookie messages — small, genuine, never overly dramatic.
+export const FORTUNES = [
+  "Small days build tall trees.",
+  "You don't have to hurry to be moving forward.",
+  "Something good is already quietly on its way.",
+  "Rest counts as progress too.",
+  "Today doesn't need to be big to matter.",
+  "You've made it further than you give yourself credit for.",
+  "A slow day is still a day that happened.",
+  "Someone, somewhere, is glad you exist.",
+  "The quiet ones sometimes bloom the biggest.",
+  "You're allowed to take the long way today.",
+  "Even Mochi naps sometimes — that's allowed.",
+  "Tiny steps still count as walking.",
+  "Not every day needs a reason to be good.",
+  "You showed up. That's the whole quest.",
+  "Little things add up more than they seem to.",
+  "A single small win can change the whole shape of a day.",
+  "You're not behind. You're just on your own timeline.",
+  "Some of the best days look completely uneventful from the outside.",
+  "Whatever you did today, it counted.",
+  "You get to start again as many times as you need to.",
+];
