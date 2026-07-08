@@ -14,7 +14,7 @@ export default function Sheet({ isOpen, onClose, title, subtitle, children }) {
         <>
           <motion.div
             key="backdrop"
-            className="fixed inset-0 z-40 bg-night/30 backdrop-blur-[2px]"
+            className="absolute inset-0 z-40 bg-night/30 backdrop-blur-[2px]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -23,7 +23,7 @@ export default function Sheet({ isOpen, onClose, title, subtitle, children }) {
           />
           <motion.div
             key="sheet"
-            className="fixed left-1/2 bottom-0 z-50 w-full max-w-[520px] -translate-x-1/2 rounded-t-xl2 bg-cream px-5 pb-9 pt-3 shadow-soft dark:bg-night max-h-[86vh] overflow-y-auto"
+            className="absolute inset-x-0 bottom-0 z-50 mx-auto w-full max-w-[520px] rounded-t-xl2 bg-cream px-5 pb-9 pt-3 shadow-soft dark:bg-night max-h-[86%] overflow-y-auto"
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             exit={{ y: "100%" }}

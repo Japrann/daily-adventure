@@ -27,7 +27,7 @@ const Confetti = forwardRef(function Confetti(_props, ref) {
   }));
 
   return (
-    <div className="pointer-events-none fixed inset-0 z-[70] overflow-hidden">
+    <div className="pointer-events-none absolute inset-0 z-[70] overflow-hidden">
       <AnimatePresence>
         {pieces.map((p) => (
           <motion.div

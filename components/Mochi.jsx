@@ -69,10 +69,10 @@ export default function Mochi({ onPet, externalLine }) {
           <AnimatePresence>
             {bubble && (
               <motion.div
-                className="bubble-tail absolute -top-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-2xl bg-white px-3.5 py-1.5 text-xs text-ink shadow-soft"
-                initial={{ opacity: 0, scale: 0.5, y: 4 }}
-                animate={{ opacity: 1, scale: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.5 }}
+                className="bubble-tail absolute -top-10 left-1/2 whitespace-nowrap rounded-2xl bg-white px-3.5 py-1.5 text-xs text-ink shadow-soft"
+                initial={{ opacity: 0, scale: 0.5, y: 4, x: "-50%" }}
+                animate={{ opacity: 1, scale: 1, y: 0, x: "-50%" }}
+                exit={{ opacity: 0, scale: 0.5, x: "-50%" }}
                 transition={{ type: "spring", damping: 18, stiffness: 300 }}
               >
                 {bubble}

@@ -7,7 +7,7 @@ import dynamic from "next/dynamic";
 // server/client hydration mismatches from those inherently dynamic values.
 const DailyAdventureApp = dynamic(() => import("@/components/DailyAdventureApp"), {
   ssr: false,
-  loading: () => <div className="min-h-screen bg-cream" />,
+  loading: () => <div className="h-screen bg-cream" />,
 });
 
 export default function Page() {

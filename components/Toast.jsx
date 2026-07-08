@@ -16,7 +16,7 @@ const Toast = forwardRef(function Toast(_props, ref) {
   }));
 
   return (
-    <div className="pointer-events-none fixed left-1/2 top-6 z-[60] -translate-x-1/2">
+    <div className="pointer-events-none absolute left-1/2 top-6 z-[60] -translate-x-1/2">
       <AnimatePresence>
         {message && (
           <motion.div

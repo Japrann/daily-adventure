@@ -99,16 +99,14 @@ export default function DailyAdventureApp() {
 
   if (!isReady) {
     // Extremely brief window before localStorage hydration resolves.
-    return <div className="min-h-screen bg-cream dark:bg-night" />;
+    return <div className="h-screen bg-cream dark:bg-night" />;
   }
 
   return (
-    <div className="relative mx-auto min-h-screen max-w-[520px] overflow-hidden bg-cream dark:bg-night">
-      <BootScreen visible={booting} onDone={() => setBooting(false)} />
-
+    <div className="relative mx-auto h-screen max-w-[520px] overflow-hidden bg-cream dark:bg-night">
       <SkyBackground period={period} weatherKey={weather.key} />
 
-      <div className="relative z-[1] px-[18px] pb-24 pt-5">
+      <div className="relative z-[1] h-full overflow-y-auto px-[18px] pb-24 pt-5">
         <div className="mt-1.5 flex items-start justify-between">
           <div>
             <h1 className="font-display text-2xl font-semibold leading-tight">
@@ -173,6 +171,7 @@ export default function DailyAdventureApp() {
       />
 
       <CelebrationScreen isOpen={celebrationOpen} onClose={() => setCelebrationOpen(false)} />
+      <BootScreen visible={booting} onDone={() => setBooting(false)} />
 
       <Toast ref={toastRef} />
       <Confetti ref={confettiRef} />

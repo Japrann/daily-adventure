@@ -94,8 +94,8 @@ export default function SkyBackground({ period, weatherKey }) {
       {weatherKey === "meteor" && (
         <motion.div
           className="absolute text-2xl"
-          style={{ top: "15%", left: "-5%" }}
-          animate={{ x: "130vw", y: "40vh" }}
+          initial={{ top: "15%", left: "-5%" }}
+          animate={{ top: "55%", left: "115%" }}
           transition={{ duration: 2.6, ease: "linear" }}
         >
           ☄️

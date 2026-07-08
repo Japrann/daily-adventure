@@ -7,7 +7,7 @@ export default function CelebrationScreen({ isOpen, onClose }) {
     <AnimatePresence>
       {isOpen && (
         <motion.div
-          className="fixed inset-0 z-[90] flex flex-col items-center justify-center bg-gradient-to-b from-night via-[#5c4a7a] to-[#7d6a9e] px-8 text-center text-cream"
+          className="absolute inset-0 z-[90] flex flex-col items-center justify-center bg-gradient-to-b from-night via-[#5c4a7a] to-[#7d6a9e] px-8 text-center text-cream"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

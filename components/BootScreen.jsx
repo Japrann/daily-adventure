@@ -33,7 +33,7 @@ export default function BootScreen({ visible, onDone }) {
     <AnimatePresence>
       {visible && (
         <motion.div
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-gradient-to-b from-night via-[#4a3f6b] to-[#6b5a8f] text-cream"
+          className="absolute inset-0 z-[100] flex flex-col items-center justify-center bg-gradient-to-b from-night via-[#4a3f6b] to-[#6b5a8f] text-cream"
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6 }}
         >
